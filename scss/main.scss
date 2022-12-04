@@ -1,0 +1,75 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// scss-docs-start theme-color-variables
+$primary: #3d5a80;
+$info: #808080;
+$success: #50cd89;
+$secondary: #0092cb;
+$warning: #f7f7f8;
+$danger: #ee6c4d;
+$font-size-base: 0.85rem;
+$font-weight-bold: 500;
+$font-weight-bolder: 600;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+);
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+// Buttons Hover and Focus
+.btn-secondary,
+.btn-secondary a {
+    color: #fff !important;
+}
+
+.btn-secondary:hover {
+    background-color: #4aaacf !important;
+}
+
+.btn-secondary:focus {
+    background-color: #0092CB !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #0092CB !important;
+    color: #fff;
+}
+
+.btn-outline-secondary:focus {
+    background-color: #ffffff !important;
+    color: #0092CB !important;
+}
+
+.btn-outline-danger:hover {
+    color: #ee6c4d !important;
+}
+
+.fs-14{
+    font-size: 14px !important;
+}
+
+.fs-15{
+    font-size: 15px !important;
+}
+
+.fs-16{
+    font-size: 16px !important;
+}
+.fs-18{
+    font-size: 18px !important;
+}
+.fw-400{
+    font-weight: 400 !important;
+}
