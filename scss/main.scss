@@ -1,15 +1,22 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mogra&family=Poppins:wght@300;400;500;600;700;800;900&family=Rammetto+One&display=swap');
 
 // scss-docs-start theme-color-variables
-$primary: #3d5a80;
+$primary: #0b4c8c;
 $info: #808080;
 $success: #50cd89;
 $secondary: #0092cb;
-$warning: #f7f7f8;
-$danger: #ee6c4d;
+$warning: #fd8901;
+$danger: #ff5c00;
 $font-size-base: 0.85rem;
 $font-weight-bold: 500;
 $font-weight-bolder: 600;
+
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 $container-max-widths: (
     sm: 540px,
@@ -56,20 +63,78 @@ $grid-breakpoints: (
     color: #ee6c4d !important;
 }
 
-.fs-14{
+.fs-14 {
     font-size: 14px !important;
 }
 
-.fs-15{
+.fs-15 {
     font-size: 15px !important;
 }
 
-.fs-16{
+.fs-16 {
     font-size: 16px !important;
 }
-.fs-18{
+
+.fs-18 {
     font-size: 18px !important;
 }
-.fw-400{
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-22 {
+    font-size: 22px !important;
+}
+
+.fw-400 {
     font-weight: 400 !important;
 }
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.ff-anton{
+    font-family: 'Anton', sans-serif;
+}
+
+.ff-mogra{
+    font-family: 'Mogra', cursive;
+}
+
+.ff-rommetto{
+    font-family: 'Rammetto One', cursive;
+}
+
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fd8901;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.1rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  .left-arrow {
+    left: -5px;
+  }
+  .right-arrow {
+    right: -5px;
+  }
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./home.scss";
+@import "./nav.scss";
+@import "./contact.scss";

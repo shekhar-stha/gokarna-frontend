@@ -1,15 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gokarna Resort</title>
 
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/nav.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.asparksys.com/medias/1670323246868.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
+
 <body>
-    <button class="btn btn-primary">Button</button>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Hero Section -->
+    <section class="nav-hero position-relative">
+        <!-- Nav -->
+        <section class="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 container">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder fs-20" href="#"><span class="text-warning fs-22 "
+                            style="padding-right: 2px;">G</span>okarna</a>
+
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav">
+                            <li class="nav-item me-4">
+                                <a class="nav-link text-white fw-500 fs-16" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-4 dropdown">
+                                <a class="nav-link text-white fw-500 fs-16 dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Our Team</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link text-white fw-500 fs-16" href="#">Rooms</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link text-white fw-500 fs-16" href="#">Testimonials</a>
+                            </li>
+                            <li class="nav-item me-4 pt-1">
+                                <a class="nav-link text-white fw-500 text-white fs-14 btn btn-warning btn-small py-1"
+                                    href="./contact.html">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <div class="hero">
+            <img class="w-100 position-absolute top-0 img-fluid hero-img"
+                src="https://cdn.asparksys.com/medias/1670228868552.jpg" alt="Main Gate">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="text-center text-white ">Whether it’s a romantic <span class="text-warning">getaway
+                        </span>or
+                        family time, we have what you’re
+                        looking for.</h1>
+                    <a href="#" class="bg-warning rounded-circle mx-auto py-3"><i
+                            class="fa-solid fa-chevron-down text-white px-3 fs-18"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team pt-5 position-relative">
+        <img class="position-absolute eclipse" src="https://cdn.asparksys.com/medias/1670252829444.svg" alt="">
+        <img class="position-absolute dotted" src="https://cdn.asparksys.com/medias/1670254655557.png" alt="">
+        <div class="container">
+            <h1 class="header">Meet Our Team Members</h1>
+            <div class="team-members">
+                <div class="member mx-4">
+                    <div class="img-div">
+                        <img class="img-fluid rounded-2" src="https://cdn.asparksys.com/medias/1670252464542.jpg"
+                            alt="rabin-dahal">
+                    </div>
+                    <h4>Rabin Dahal</h4>
+                    <p>Managing Director</p>
+                </div>
+
+                <div class="member mx-4">
+                    <div class="img-div">
+                        <img class="img-fluid rounded-2" src="https://cdn.asparksys.com/medias/1670253331977.jpg"
+                            alt="">
+                    </div>
+                    <h4>Arjun Thapa</h4>
+                    <p>CEO</p>
+                </div>
+
+                <div class="member mx-4">
+                    <div class="img-div">
+                        <img class="img-fluid rounded-2" src="https://cdn.asparksys.com/medias/1670254070843.jpg"
+                            alt="">
+                    </div>
+                    <h4>Bipin Khatiwada</h4>
+                    <p>COO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq my-3">
+        <div class="container py-5">
+            <h1 class="header">
+                Frequently Asked Questions
+            </h1>
+            <div class="row">
+                <div class="accordion col-lg col-12" id="accordionExample ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingOne">
+                            <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class=""> What is the depth of the swimming pools ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info ">
+                                <p>
+                                    7 feet for adults and 3 foot for baby.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingTwo">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="">Can we book hall for parties and meeting ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info">
+                              <p>
+                                Yes, you can book hall for parties, meetings or any type of events.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingThree">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class=""> How much is swimming fee ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info">
+                                <p>
+                                    For the adults - 250 RS <br>
+                                    For childrens - 200 Rs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion col-lg col-12" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingFour">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span class=""> How much does entry fee cost ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info">
+                               The entry fee for gate costs 50 Rs
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header accordion-topic mb-0 pb-0" id="headingFive">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span class=""> How much does a room cost ?</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-info">
+                               The price for the room varies between 3500 to 4500.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-5 d-flex justify-content-center">
+                More Questions?
+                <a href="tel:9852060366">
+                    <span class="text-secondary ps-1"> <u>Contact Us</u></span></a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
