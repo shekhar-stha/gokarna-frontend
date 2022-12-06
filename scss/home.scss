@@ -1,11 +1,16 @@
-.container{
-    .header{
+.container {
+    .header {
         color: #0b4c8c;
         margin-bottom: 2.4rem;
         position: relative;
         font-size: 1.9rem;
+
+        @media (max-width: 576px) {
+            font-size: 1.5rem;
+        }
     }
-    .header::after{
+
+    .header::after {
         content: "";
         position: absolute;
         width: 14%;
@@ -17,46 +22,58 @@
     }
 }
 
-.shadow-nav{
+.shadow-nav {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
 .nav-hero {
     height: 100vh;
     overflow-y: hidden;
+
     @media (max-width: 768px) {
         height: 70vh;
     }
-    .hero{
+
+    .hero {
         height: 90%;
+
         @media (max-width: 992px) {
             position: relative;
         }
-        h1{
+
+        h1 {
             line-height: 50px;
             font-size: 38px;
             padding-bottom: 6rem;
+
             @media (max-width: 768px) {
                 line-height: 55px;
                 font-size: 35px;
             }
+
             @media (max-width: 576px) {
                 line-height: 50px;
                 font-size: 28px;
                 padding-bottom: 3rem;
             }
         }
-        a{
+
+        a {
             animation: shadow 3s infinite;
         }
+
         @keyframes shadow {
-            0%, 100% {
-                 box-shadow: none; 
+
+            0%,
+            100% {
+                box-shadow: none;
             }
-            
+
             50% {
                 box-shadow: 0 0 0 5px #ffffff60, 0 0 0 10px #ffffff30;
             }
         }
+
         .hero-img {
             filter: brightness(30%);
             height: 100%;
@@ -67,12 +84,13 @@
 }
 
 
-.team{
-    .eclipse{
+.team {
+    .eclipse {
         z-index: -1;
         right: 0;
     }
-    .dotted{
+
+    .dotted {
         z-index: -1;
         left: 2rem;
         bottom: 20%;
@@ -83,15 +101,22 @@
     }
 
     @keyframes rotate {
-        from {transform: rotate(0deg);}
-        to {transform: rotate(180deg);}
-      }
-    .member{
-        .img-div{
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(180deg);
+        }
+    }
+
+    .member {
+        .img-div {
             width: 100%;
             height: 23rem;
             overflow: hidden;
-            img{
+
+            img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
@@ -99,17 +124,18 @@
             }
         }
 
-        h4{
+        h4 {
             padding-top: 0.6rem;
             color: #0b4c8c;
             margin-bottom: 0.3rem;
         }
-        p{
+
+        p {
             color: #808080;
             font-size: 0.9rem;
         }
 
-        .img-div:hover img{
+        .img-div:hover img {
             transform: scale(1.03);
             filter: brightness(60%);
             cursor: pointer;
@@ -121,60 +147,80 @@
 
 // Faq{
 
-    .accordion {
-        --bs-accordion-border-width: 0px;
-        --bs-accordion-btn-focus-border-color: #fffff;
-        --bs-accordion-active-color: #fffff;
-        --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem;
-      }
-      
-      .faq {
-        background-color: #fafafa;
-      }
-      
-      .faq .accordion-item {
-        margin-bottom: 1rem;
-        border: 1px solid #e4e4e4;
-        border-radius: 10px;
-        overflow: hidden;
-        background-color: #fff;
-      }
-      
-      .accordion-button:not(.collapsed)::after {
-        background-image: url("data:image/svg+xml,...");
-      }
-      .accordion-button::after {
-        background-image: url("data:image/svg+xml,...");
-      }
-      
-      .accordion-button:not(.collapsed):after {
-        transform: none !important;
-        transform: all 0.3s;
-      }
-      
-      .faq .accordion-topic button {
-        padding: 10px 30px;
-      }
-      
-      .faq .accordion-topic button:after {
-        font-family: "FontAwesome";
-        content: "\f068";
-        float: right;
-        color: #ee6c4d;
-        font-size: 1rem;
-        height: inherit;
-      }
-      .faq .accordion-topic button.collapsed:after {
-        content: "\f068";
-        content: "\2b";
-      }
-      .faq .accordion-topic span {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #293241;
-      }
-      .faq .accordion-body{
-        padding-left: 2rem;
-      }
-      
+.accordion {
+    --bs-accordion-border-width: 0px;
+    --bs-accordion-btn-focus-border-color: #fffff;
+    --bs-accordion-active-color: #fffff;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem;
+}
+
+.faq {
+    background-color: #fafafa;
+}
+
+.faq .accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,...");
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,...");
+}
+
+.accordion-button:not(.collapsed):after {
+    transform: none !important;
+    transform: all 0.3s;
+}
+
+.faq .accordion-topic button {
+    padding: 10px 30px;
+}
+
+.faq .accordion-topic button:after {
+    font-family: "FontAwesome";
+    content: "\f068";
+    float: right;
+    color: #ee6c4d;
+    font-size: 1rem;
+    height: inherit;
+}
+
+.faq .accordion-topic button.collapsed:after {
+    content: "\f068";
+    content: "\2b";
+}
+
+.faq .accordion-topic span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #293241;
+}
+
+.faq .accordion-body {
+    padding-left: 2rem;
+}
+
+footer {
+     p {
+        cursor: pointer;
+    }
+
+    .footer-col a {
+        color: #808080;
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        footer .footer-col {
+            text-align: left;
+        }
+    }
+}
