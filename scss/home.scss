@@ -84,6 +84,28 @@
 }
 
 
+.about-us{
+    li{
+        padding-bottom: 0.35rem;
+    }
+    img{
+        transition: all 0.3s;
+        object-fit: cover;
+        @media (max-width:992px) {
+            height: 26rem;
+            width: 100%;
+        }
+        @media (max-width:768px) {
+            height: 20rem;
+            width: 100%;
+        }
+    }
+    img:hover{
+        filter: brightness(80%);
+    }
+}
+
+
 .team {
     .eclipse {
         z-index: -1;
@@ -143,6 +165,30 @@
     }
 }
 
+.gallery{
+    .header::after {
+        width: 50%;
+    }
+    a{
+    text-decoration: none;
+    }
+    .picture{
+        img{
+            border-radius: 7px;
+            filter: grayscale(1);
+            transition: all 0.3s;
+            height: 19rem;
+            object-fit: cover;
+            width: 100%;
+            @media (max-width: 480px) {
+                height: 23rem;
+            }
+        }
+        img:hover{
+            filter: grayscale(0);
+        }
+    }
+}
 
 
 // Faq{

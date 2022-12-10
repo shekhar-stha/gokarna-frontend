@@ -134,6 +134,9 @@ $grid-breakpoints: (
     right: -5px;
   }
 
+  *{
+    scroll-behavior: smooth;
+  }
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./home.scss";
 @import "./nav.scss";
