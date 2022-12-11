@@ -30,7 +30,7 @@ html {
   display: grid;
   width: 114em;
   grid-gap: 1.1rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   align-items: start;
 }
 
@@ -51,7 +51,7 @@ html {
 .card-img-room {
   display: block;
   width: 100%;
-  height: 10rem;
+  height: 14rem;
   object-fit: cover;
 }
 
