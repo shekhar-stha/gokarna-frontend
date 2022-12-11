@@ -43,6 +43,18 @@ html {
   transition: 0.2s;
 }
 
+@media (max-width:992px) {
+  .room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:768px) {
+  .room-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .grid-item-room:hover {
   transform: translateY(-0.5%);
   box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.5);
@@ -118,6 +130,12 @@ html {
   border-radius: 70px 10px 70px 10px;
   color: white;
   padding: 10px 0 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container-hall {
+    height: inherit;
+  }
 }
 
 .para-hall {
