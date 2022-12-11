@@ -14,7 +14,7 @@ html {
   /* font-size: 62.5%; */
 }
 
-.rooms-cointainer {
+.rooms-container {
   /* background-color: #eee; */
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -51,7 +51,7 @@ html {
 .card-img-room {
   display: block;
   width: 100%;
-  height: 14rem;
+  height: 14rem !important;
   object-fit: cover;
 }
 
@@ -105,9 +105,6 @@ html {
 }
 
 @media only screen and (max-width: 60em) {
-  body {
-    padding: 2rem;
-  }
   .room-grid {
     grid-gap: 2rem;
   }
