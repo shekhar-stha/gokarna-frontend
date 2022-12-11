@@ -62,7 +62,8 @@
                             <a class="nav-link text-dark fw-600 fs-16" href="./gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item me-4 pt-1">
-                            <a class="nav-link text-dark fw-600 text-white fs-14 btn btn-warning btn-small py-1" href="./contact.html">Contact
+                            <a class="nav-link text-dark fw-600 text-white fs-14 btn btn-warning btn-small py-1"
+                                href="./contact.html">Contact
                                 Us</a>
                         </li>
                     </ul>
@@ -128,7 +129,8 @@
                         <!-- CONTACT FORM STARTS HERE -->
                         <div class="col-lg-5 col-md-12 col-sm-12">
                             <div class="contact-section__form">
-                                <form action="#" class="form-group">
+                                <form class="form-group" action="https://formspree.io/f/xlevqzjg"
+                                    method="POST">
                                     <h1 class="contact-form-right__form-title">Contact Us</h1>
                                     <!-- Lead add 1st row  -->
                                     <div class="contact-form-right__row">
@@ -138,7 +140,7 @@
                                                 Full Name<span class="red-star">*</span>
                                             </label>
                                             <div class="">
-                                                <input type="text" name="full-name" placeholder="Enter full name"
+                                                <input type="text" name="name" placeholder="Enter full name"
                                                     class="form-control" required />
                                             </div>
                                         </div>
@@ -166,7 +168,7 @@
                                                 Message<span class="red-star">*</span>
                                             </label>
                                             <div class="">
-                                                <textarea class="form-control" placeholder="Type your message..."
+                                                <textarea name="message" class="form-control" placeholder="Type your message..."
                                                     id="exampleFormControlTextarea1" rows="5"></textarea>
                                             </div>
                                         </div>
@@ -174,7 +176,7 @@
 
                                     <!-- Lead add 6th row  -->
                                     <div class="contact-form-right__btns">
-                                        <button type="submit" class="btn contact-form-btn w-100 mt-5">
+                                        <button type="submit" value="Send" class="btn contact-form-btn w-100 mt-5">
                                             Send Message
                                         </button>
                                     </div>
@@ -226,7 +228,7 @@
                 <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
                     <p><strong class="text-primary h5 fw-bolder"> Quick Links</strong></p>
                     <div class="text-info">
-                    
+
                         <p><a href="./index.html">Our Team</a></p>
                         <p><a href="./index.html#team">About Us</a></p>
                         <p><a href="./index.html#faq">FAQ</a></p>
