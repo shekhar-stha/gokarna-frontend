@@ -11,7 +11,7 @@ $font-size-base: 0.85rem;
 $font-weight-bold: 500;
 $font-weight-bolder: 600;
 
-*{
+* {
     font-family: 'poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -99,15 +99,15 @@ $grid-breakpoints: (
     font-weight: 700 !important;
 }
 
-.ff-anton{
+.ff-anton {
     font-family: 'Anton', sans-serif;
 }
 
-.ff-mogra{
+.ff-mogra {
     font-family: 'Mogra', cursive;
 }
 
-.ff-rommetto{
+.ff-rommetto {
     font-family: 'Rammetto One', cursive;
 }
 
@@ -126,17 +126,26 @@ $grid-breakpoints: (
     justify-content: center;
     align-items: center;
     z-index: 100;
-  }
-  .left-arrow {
-    left: -5px;
-  }
-  .right-arrow {
-    right: -5px;
-  }
+}
 
-  *{
+.left-arrow {
+    left: -5px;
+}
+
+.right-arrow {
+    right: -5px;
+}
+
+* {
     scroll-behavior: smooth;
-  }
+}
+
+.rooms-container{
+    .slick-arrow{
+        background-color: transparent;
+        color: #ebebeb;
+    }
+}
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./home.scss";
 @import "./nav.scss";
