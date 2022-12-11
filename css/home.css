@@ -108,7 +108,6 @@ html {
   body {
     padding: 2rem;
   }
-
   .room-grid {
     grid-gap: 2rem;
   }
@@ -121,6 +120,7 @@ html {
   height: 40vh;
   border-radius: 70px 10px 70px 10px;
   color: white;
+  padding: 10px 0 10px 0;
 }
 
 .para-hall {
@@ -202,5 +202,11 @@ html {
     font-size:17px;
     width: 140px;
 
+  }
+  .inContainer-hall { 
+    justify-content: space-between;
+  }
+  .para-hall {
+    width: 80%;
   }
 }
